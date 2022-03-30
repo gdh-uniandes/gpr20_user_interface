@@ -1,0 +1,118 @@
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Sets the tab style when NOT selected */
+QTabBar::tab {
+  font-size: 25px;
+  min-height: 50px;
+  background-color: lightgray;
+}
+
+/* Sets the tab style when selected */
+QTabBar::tab:selected {
+  background-color: white;
+}
+
+/* Set the widgets background color */
+QWidget#ParametersTab, QWidget#SurveyTab {
+  background-color: white;
+}
+
+/* STYLES FOR PARAMETERS TAB: STEP SIZE */
+QLabel#lb_step_size {
+  font-size: 20px;
+}
+
+QPushButton#bt_step_size {
+  height: 30px;
+  font-size: 20px;
+  background-color: lightgray;
+}
+
+/* STYLES FOR PARAMETERS TAB: IP SELECTOR */
+
+
+QLabel {
+  font-size: 20px;
+}
+
+
+/* Custom widgets styling */
+
+QLabel#lb_loading_info {
+  font-size: 50px;
+}
+
+
+QPushButton#bt_start {
+  color: white;
+  min-height: 50px;
+  background-color: green;
+}
+
+QPushButton#bt_start:disabled {
+  color: black;
+  min-height: 50px;
+  background-color: grey;
+}
+
+QPushButton#bt_stop {
+  color: white;
+  min-height: 50px;
+  background-color: red;
+}
+
+QPushButton#bt_stop:disabled {
+  color: black;
+  min-height: 50px;
+  background-color: grey;
+}
+
+QGridLayout {
+  border: 1px solid red;
+}
+
+
+QSpinBox {
+  height: 30px;
+  padding-left: 10px;
+  margin-right: 80px;  /* make room for the arrows */
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  selection-color: black;
+  selection-background-color: white;
+}
+  
+QSpinBox::up-button  {
+  subcontrol-origin: margin;
+  subcontrol-position: center right;
+  position: relative;
+  
+  left: -40px;   /*   shift position back*/
+  width: 0;
+  height: 0;
+
+  /* Sets the up button */
+  border-bottom: 30px solid black;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+}
+
+QSpinBox::down-button  {
+  subcontrol-origin: margin;
+  subcontrol-position: center right;
+  
+  width: 0px;
+  height: 0px;
+
+  /* Sets the up button */
+  border-top: 30px solid black;
+  border-right: 15px solid white;
+  border-left: 15px solid white;
+}
+
+QLineEdit:disabled {
+  color: black;
+}
